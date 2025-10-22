@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raycast Hero Section - Responsive Improved</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+  <div class="overlay"></div>
+
+  <nav class="navbar">
+    <div class="logo">
+      <img src="images/logo.svg" alt="Raycast Logo">
+    </div>
+
+    <div class="nav-links">
+      <a href="#" class="active">Store</a>
+      <a href="#">Developer</a>
+      <a href="#">Teams</a>
+      <a href="#">Pro</a>
+      <a href="#">Changelog</a>
+      <a href="#">Pricing</a>
+      <a href="#">Blog</a>
+      <div class="nav-underline"></div>
+    </div>
+
+    <div class="nav-right">
+      <button class="login-btn">Log in</button>
+      <button class="download-btn">Download</button>
+    </div>
+
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="close-btn" id="closeMenu">✕</button>
+    <a href="#">Store</a>
+    <a href="#">Developer</a>
+    <a href="#">Teams</a>
+    <a href="#">Pro</a>
+    <a href="#">Changelog</a>
+    <a href="#">Pricing</a>
+    <a href="#">Blog</a>
+  </div>
+
+  <section class="hero">
+    <div class="intro-tag">Introducing Pro</div>
+    <h1>New Level Unlocked</h1>
+    <p>Turn Pro to harness the power of AI, make Raycast your own with custom themes, keep your Macs in sync and more.</p>
+    <button class="compare-btn">Compare Plans</button>
+    <span>Starting at $8/mo</span>
+  </section>
+
+
+<!-- Mac Smarter Section Start -->
+<section class="mac-smarter-section">
+  <!-- Blue Glow Circle -->
+  <div class="blur-circle"></div>
+
+  <div class="wrapper">
+    <!-- Top Text Section -->
+    <div class="text-section">
+      <div class="badge">HALAL AI</div>
+      <div class="heading">Your Mac just got smarter</div>
+      <div class="desc">
+        Write smarter, code faster and answer questions quicker with ChatGPT in recast.<br>
+        Deeply integrated into macOS and just one keystroke away.
+      </div>
+    </div>
+
+    <!-- Middle Image Section -->
+    <div class="image-section">
+      <img src="images/macsecimage.png" alt="Mac Preview">
+    </div>
+
+    <!-- Bottom Cards -->
+    <div class="card-section">
+      <div class="card">
+        <div class="card-top">
+          <img src="images/SVG.svg" alt="icon">
+          <div class="card-title">Always-on ChatGPT</div>
+        </div>
+        <div class="card-desc">
+          Ask anything, anytime, anywhere. Stuck while programming? Need some copy? Or just have a question – Ask AI.
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-top">
+          <img src="images/Vector (1).svg" alt="icon">
+          <div class="card-title">Always-on ChatGPT</div>
+        </div>
+        <div class="card-desc">
+          Ask anything, anytime, anywhere. Stuck while programming? Need some copy? Or just have a question – Ask AI.
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-top">
+          <img src="images/Vector (2).svg" alt="icon">
+          <div class="card-title">Always-on ChatGPT</div>
+        </div>
+        <div class="card-desc">
+          Ask anything, anytime, anywhere. Stuck while programming? Need some copy? Or just have a question – Ask AI.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Mac Smarter Section End -->
+
+<!-- SYNC-SECTION -->
+<section class="sync-section">
+  <div class="wrappper">
+    <div class="left-content">
+      <div class="tag"><span>HALAL AI</span></div>
+      <div class="text">
+        <h2>Keep all your devices in sync with a single toggle</h2>
+        <p>
+          Keep everything safe and updated across your Macs. Perfect to switch
+          between personal and work setup. Or as a backup to move to a new device
+          within minutes.
+        </p>
+      </div>
+    </div>
+
+    <div class="right-visual">
+      <!-- Bottom Image -->
+      <img src="images/SVG (1).svg" alt="ring image" class="bottom-img" />
+
+      <!-- Center Toggle -->
+      <div class="toggle-wrapper" id="toggleButton">
+        <div class="circle"></div>
+      </div>
+
+      <!-- Top Overlay Image -->
+      <img src="images/image.svg" alt="upper overlay" class="top-img" />
+
+      <!-- ✨ New Overlay Rectangle (for highlight effect) -->
+      <div class="overlay-rectangle"></div>
+    </div>
+  </div>
+</section>
+
+
+<!-- THEME-SECTION -->
+<div class="theeme">
+<section class="themes-section">
+  <div class="themes-top">
+    <button class="themes-btn">Custom Themes</button>
+    <h1 class="themes-title">Show your personality</h1>
+    <p class="themes-subtitle">
+      Make Raycast your own with gorgeous themes. Opt for a pre-made one or design your own and share it with the community.
+    </p>
+  </div>
+
+  <div class="themes-bottom"></div>
+
+  <img src="images/SVG (3).svg" alt="dots" class="themes-dots" />
+
+  <div class="themes-middle">
+    <div class="themes-search">
+      <img src="images/div.AppWindow_backButton__UixFt.svg" alt="search" />
+      <input type="text" placeholder="Search for images..." />
+    </div>
+    <div class="themes-cards" id="themes-cards"></div>
+  </div>
+
+  <div class="themes-email"><img src="images/Frame 1618871629.svg" alt=""></div>
+
+  <div class="themes-picker">
+    <label>Hue</label>
+    <div class="themes-bar" id="themes-hue"><div class="themes-icon" id="themes-hue-icon"></div></div>
+    <label>Saturation</label>
+    <div class="themes-bar" id="themes-sat"><div class="themes-icon" id="themes-sat-icon"></div></div>
+    <label>HEX</label>
+    <div class="themes-hex" id="themes-hex">#3b2b21</div>
+  </div>
+</section>
+</div>
+
+
+
+
+
+
+
+<!-- =========================== -->
+<!-- Infinity / Clipboard History Section -->
+<!-- =========================== -->
+<section class="infinity-section">
+  <div class="infinity-wrapper">
+    <div class="infinity-left">
+      <img src="images/SVG (5).svg" alt="Infinity Icon" class="infinity-image" />
+    </div>
+
+    <div class="infinity-right">
+      <div class="infinity-content">
+        <div class="button-tag">Clipboard History</div>
+        <h2 class="infinity-heading">
+          Unlimited amount of content in your history
+        </h2>
+        <p class="infinity-para">
+          Make Raycast your own with gorgeous themes. Opt for a pre-made one or
+          design your own and share it with the community.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+<section class="translator-section">
+    <div class="translator-wrapper">
+
+      <!-- LEFT IMAGE -->
+      <div class="translator-left">
+        <div class="image-container">
+          <img src="/images/image (2).svg" alt="Translator Preview" id="zoom-image">
+          <div id="zoom-lens"></div>
+        </div>
+      </div>
+
+      <!-- RIGHT CONTENT -->
+      <div class="translator-right">
+        <button class="translator-btn">Translator</button>
+        <div class="translator-heading">Quickest way to translate</div>
+        <div class="translator-para">
+          Even less context switching! Quickly translate text on the fly,
+          check its pronunciation or dictate your own words.
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+
+
+
+<section class="pricing-section-unique">
+     <div class="pricing-bg-circle"></div>
+  <div class="pricing-header">
+    <h2>Pricing</h2>
+    <p>
+      The core of Raycast is free, including more than 1000 extensions.
+      Purchase the Pro Plan to unlock a new level of productivity with AI,
+      Cloud Sync and much more!
+    </p>
+  </div>
+
+  <div class="pricing-toggle" id="pricing-toggle">
+    <div id="pricing-monthly" class="active">Monthly</div>
+    <div id="pricing-yearly">Yearly</div>
+  </div>
+
+  <div class="pricing-cards" id="pricing-cards"></div>
+
+  <div class="pricing-enterprise">
+    <span>Want enterprise features?</span>
+    <strong>Tell us more</strong>
+    <img src="images/arroww.svg" alt="arrow" class="pricing-arrow-icon">
+  </div>
+</section>
+
+
+
+
+
+
+
+
+<section class="faq-section">
+  <div class="faq-wrapper">
+    <div class="faq-header">
+      <h2>FAQs</h2>
+      <p>Answers to the most frequently asked questions.</p>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <h3>How do you handle my data?</h3>
+        <img src="https://cdn-icons-png.flaticon.com/512/32/32195.png" class="arrow" alt="arrow" />
+      </div>
+      <div class="faq-answer">
+        <p>Your data is securely stored and never shared with third parties without your consent.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <h3>What's the difference between the Pro and Team plan?</h3>
+        <img src="https://cdn-icons-png.flaticon.com/512/32/32195.png" class="arrow" alt="arrow" />
+      </div>
+      <div class="faq-answer">
+        <p>The Pro plan is for individuals, while the Team plan adds collaboration and management features.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <h3>Can I use my own OpenAI API key?</h3>
+        <img src="https://cdn-icons-png.flaticon.com/512/32/32195.png" class="arrow" alt="arrow" />
+      </div>
+      <div class="faq-answer">
+        <p>Yes, you can integrate your own OpenAI API key directly in the settings section.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <h3>Which model do you use for Raycast AI?</h3>
+        <img src="https://cdn-icons-png.flaticon.com/512/32/32195.png" class="arrow" alt="arrow" />
+      </div>
+      <div class="faq-answer">
+        <p>We use OpenAI’s GPT-4 model for Raycast AI to deliver top performance and accuracy.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <h3>Can I upgrade my Teams subscription to use GPT-4?</h3>
+        <img src="https://cdn-icons-png.flaticon.com/512/32/32195.png" class="arrow" alt="arrow" />
+      </div>
+      <div class="faq-answer">
+        <p>Yes, Teams plans can be upgraded to access GPT-4 features from your account settings.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <h3>Does Raycast have a Student Program?</h3>
+        <img src="https://cdn-icons-png.flaticon.com/512/32/32195.png" class="arrow" alt="arrow" />
+      </div>
+      <div class="faq-answer">
+        <p>Yes, Raycast offers discounts and benefits for verified students. Visit our student program page.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+<section class="footer-container">
+<div class="footer-left">
+<img src="images/logoo.svg" alt="Raycast Logo" />
+</div>
+
+
+<div class="footer-right">
+<div class="footer-column">
+<h3>Product</h3>
+<a href="#">Store</a>
+<a href="#">Developer</a>
+<a href="#">Teams</a>
+<a href="#">Pro</a>
+<a href="#">API Docs</a>
+<a href="#">Pricing</a>
+<a href="#">Changelog</a>
+<a href="#">Manual</a>
+<a href="#">Troubleshooting</a>
+<a href="#">FAQ</a>
+</div>
+
+
+<div class="footer-column">
+<h3>Company</h3>
+<a href="#">Careers</a>
+<a href="#">Manifesto</a>
+<a href="#">Privacy policy</a>
+<a href="#">Terms of Service</a>
+<a href="#">DPA</a>
+<a href="#">Press Kit</a>
+<a href="#">Contact</a>
+</div>
+
+
+<div class="footer-column">
+<h3>Community</h3>
+<a href="#">Community stories</a>
+<a href="#">Slack</a>
+<a href="#">Twitter</a>
+<a href="#">GitHub</a>
+<a href="#">Dribbble</a>
+</div>
+
+
+<div class="footer-column">
+<h3>By Raycast</h3>
+<a href="#">Snippets</a>
+<a href="#">Prompts</a>
+<a href="#">ray.so</a>
+<a href="#">Icon Maker</a>
+<a href="#">Merch</a>
+<a href="#">Wallpapers</a>
+</div>
+</div>
+
+
+<!-- 💡 Glowing Circle Light -->
+<div class="footer-glow"></div>
+</section>
+
+
+  
+  <script src="index.js"></script>
+</body>
+</html>
